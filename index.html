@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VerifyToTwice — Signature et vérification de documents</title>
+  <meta name="description" content="Page de présentation de VerifyToTwice — application de bureau pour signer et vérifier l'authenticité des documents." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="ponag.png" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <img src="assets/ponag.png" alt="Logo VerifyToTwice" class="logo" />
+        <div class="brand-text">
+          <span class="name">VerifyToTwice</span>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav">
+        <a href="#hero">Accueil</a>
+        <a href="#features">Fonctionnalités</a>
+        <a href="#security">Sécurité</a>
+        <a href="#download">Téléchargement</a>
+        <a href="#about">À propos</a>
+      </nav>
+
+      <div class="controls">
+        <button id="themeToggle" class="theme-toggle" aria-label="Basculer thème" title="Basculer thème">🌙</button>
+        <button id="menuToggle" class="menu-toggle" aria-label="Basculer le menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>VerifyToTwice</h1>
+          <p class="tagline">Solution desktop de signature et vérification de documents</p>
+          <p class="lead">Application de bureau pour signer et vérifier l'authenticité des documents via des signatures cryptographiques ; toutes les opérations s'effectuent localement sur votre machine Windows.</p>
+          <div class="hero-actions">
+            <a id="downloadPrimary" href="verifytotwice.exe" class="btn btn-primary" download>Télécharger VerifyToTwice (.exe)</a>
+            <a href="#features" class="btn btn-secondary">Voir les fonctionnalités</a>
+          </div>
+          <ul class="meta">
+            <li><strong>Plateforme :</strong> Windows</li>
+            <li><strong>Version :</strong> 1.0</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-card">
+            <img src="part01.png" alt="Aperçu de l'interface VerifyToTwice" />
+            <div class="visual-caption">Aperçu de l'application</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features">
+      <div class="container">
+        <h2>Fonctionnalités</h2>
+        <div class="feature-grid simple-cards">
+          <div class="feature card">
+            <h4>Génération d'empreinte (SHA-256)</h4>
+            <p>Calcule une empreinte unique du document pour garantir son intégrité.</p>
+          </div>
+          <div class="feature card">
+            <h4>Signatures sécurisées (HMAC)</h4>
+            <p>Signatures basées sur HMAC pour authentifier l'origine du document.</p>
+          </div>
+          <div class="feature card">
+            <h4>Vérification d'intégrité</h4>
+            <p>Détecte toute modification du contenu après la signature.</p>
+          </div>
+          <div class="feature card">
+            <h4>Formats pris en charge</h4>
+            <p>PDF, Word (.docx) et fichiers texte courants.</p>
+          </div>
+          <div class="feature card">
+            <h4>Interface graphique simple</h4>
+            <p>Conçue pour être claire et facile à utiliser sur poste de travail.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Security -->
+    <section class="section" id="security">
+      <div class="container">
+        <h2>Sécurité</h2>
+        <div class="feature-grid">
+          <div class="card">
+            <h4>Hachage SHA-256</h4>
+            <p>Empreintes cryptographiques robustes pour l'intégrité des documents.</p>
+          </div>
+          <div class="card">
+            <h4>Signatures HMAC</h4>
+            <p>Authentification des documents via HMAC sécurisé.</p>
+          </div>
+          <div class="card">
+            <h4>Chiffrement AES</h4>
+            <p>Options de chiffrement symétrique pour protéger les données sensibles.</p>
+          </div>
+          <div class="card">
+            <h4>Identifiants uniques</h4>
+            <p>Chaque signature reçoit un identifiant unique pour la traçabilité.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section alt" id="about">
+      <div class="container">
+        <h2>À propos</h2>
+        <p>VerifyToTwice est une application de bureau conçue pour aider les utilisateurs à protéger et vérifier des documents importants en utilisant des signatures numériques et des empreintes de contenu ; toutes les opérations s'exécutent localement et aucun fichier n'est transféré en ligne via ce site.</p>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section class="section" id="download">
+      <div class="container download-grid">
+        <div class="download-panel card">
+          <h2>Téléchargement</h2>
+          <p class="version">Version : <strong>1.0</strong></p>
+          <p class="small">Le programme s'exécute localement sur Windows (fichier .exe).</p>
+          <a id="downloadSecondary" href="verifytotwice.exe" class="btn btn-primary large" download>Télécharger VerifyToTwice (.exe)</a>
+          <p class="small muted">Ce site présente le logiciel — il ne signe ni ne vérifie de documents en ligne.</p>
+
+          <div style="margin-top:12px;">
+            <h4>Instructions d'installation</h4>
+            <ol class="small" style="margin:8px 0;padding-left:18px;color:var(--muted)">
+              <li>Téléchargez le fichier .exe ci‑dessus.</li>
+              <li>Double-cliquez sur le fichier téléchargé pour lancer l'installation.</li>
+              <li>Suivez l'assistant d'installation et ouvrez l'application après l'installation.</li>
+            </ol>
+          </div>
+        </div>
+
+    
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>VerifyToTwice</strong> — Version 1.0 — © <span id="year"></span>
+      </div>
+      
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
